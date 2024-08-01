@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6be5e06559.js" crossorigin="anonymous"></script>
+   
+    <title>Document</title>
+</head>
+<body class="bg-blue-400">
+   <header>
+    <div>
+        <h1 id="bmi" class="text-center text-2xl font-bold text-slate-800 cursor-pointer">
+            BMI CALACULATOR
+        </h1>
+    </div>
+   </header>
+<!-- height and weigth section-->
+   <div>
+
+    <form class="text-center py-20 ">
+
+        <div class="py-11">
+        <label  class="block mb-2 text-2xl font-medium text-gray-900 ">Height</label>
+
+        <input type="text" id="height" class="bg-gray-50 border  " placeholder="ENTER HEIGHT IN CM"  />
+        </div>
+
+        <!--WEIGHT -->
+        <div class="py-10">
+        <label  class="block mb-2 text-2xl font-medium text-gray-900  ">Weight</label>
+
+        <input type="text" id="weight" class="bg-gray-50 border  " placeholder="ENTER WEIGHT IN KG"  />
+        </div>
+
+    </form>
+   </div>
+  
+   <!-- calculate button-->
+
+    <div>
+
+   <div class="text-center
+   ">
+
+    <button id="calculateButton" class=" text-white text-3xl mt-5 hover:bg-sky-900 bg-black rounded-lg border-red-300 mx-[20px] ">
+        Calculate
+    </button>
+    
+    
+
+
+        <button id="spinnerButton" type="button"
+        class="bg-indigo-500 ...  rounded-xl text-xl " style="display: none;">
+            <svg class="h-1 w-5 mr-3 ... " viewBox="0 0 24 24">
+                <i class="animate-spin fa-solid fa-spinner"></i>
+            </svg>
+       
+
+          </button>
+
+   </div>
+
+<div class="text-center">
+    <h1 class="text-black font-bold">BMI GUIDE</h1>
+    <ul class="text-black">
+        <li>Under weight = less than 18.6 </li>
+        <li>Normal Range = 18.6 and 24.9</li>
+        <li>Overweight = Greater than 24.9</li>
+    </ul>
+</div>
+</body>
+<script src="style.js"></script>
+</html>
